@@ -1,0 +1,73 @@
+.container{
+    border: 1px solid #343a40;
+    margin-top: 60px;
+    max-width: 800px;
+    height: 800px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: #e0ffff;
+    
+
+}
+
+input{
+    background-color: #f8f9fa;
+}
+    .second-id{
+        text-align: right;
+        margin-right: 0;
+        margin-left: 100px;
+        color:#f96d15 ;
+    }
+ .third-id{
+     color: #f96d15;
+     font-size: 30px;
+     text-align: center;
+     display: block;
+     margin: 0 auto;
+ }
+
+ h3{
+   text-align: center; 
+   margin-top: 30px; 
+ }
+
+ .city{
+     text-align: center;
+     font-size: 16px;
+
+ }
+ .first{
+     text-align: center;
+ }
+.owner{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+}
+.color{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.search-form{
+    margin-bottom: 20px;
+}
+.dateToday{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+button{
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 1px solid black;
+border:30px;
+
+
+}
+
+.temperature{
+    text-align: center;
+    font-size: 30px;
+    padding-top: -30px;
+}
