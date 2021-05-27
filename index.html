@@ -17,168 +17,184 @@
     
 </head>
 <body>
+
     <div class="container">
-
-      <form class = "searchForm" id = "search-form">  
-        <div class = "row">
-          <div class = "col-6">
-            <input type="text" placeholder="Search city" autofocus ="on" autocomplete="off" id="city-input" class="type-city w-100">
-          </div>
-          <div class = "col-3">
-            <input type="submit" value="Search" class= " search-button w-100">
-
-          </div>
-          <div class="col-3" class= "w-100">
-
-            <button class= "btn btn-success w-100" id="current-location-button">
-              current
-            </button>
-          </div>
-
-        </div>
+      <div class="weather">
+        <P class="title">
+          Weather Champ
       
-      
-      </form>
+        <img src="weather-Pic.png" class="image" alt="weather-image">
+        </P>
 
+        <form class = "searchForm" id = "search-form">
+          <div class="row">
+            <div class="col-9">
+              <input type="text" placeholder="Enter a city!" autofocus ="on" autocomplete="off" id="city-input" class="type-city w-100">
+              </div>
 
+              <div class="col-3">
+                <input type="submit" value="Search" class= " search-button w-100">
+              </div>
 
-        <br/>
-        <h3 id = "city">
-            Berlin
-        </h3>
-        <br/>
+            </div>
+        </form>
 
-        <h4 class="dateToday"  id="date-today">
-          Thursday 17:58
-        </h4>
-        <br/>
+        <div class="weather-info">
+          <div class="row">
+            <div class="col-6">
+              <h1 id = "city">
+                New York
+              </h1>
+              <h4>
+                  <span
+                    class="dateToday"  id="date-today">
+        Thursday 17:58
+                  </span>
+                </h4>
+            </div>
 
-        <div class="row">
-            <div class="col-sm-9">
-
-              <span class="third-id">
-                <i class="fas fa-sun"></i>
-
-                <br/>
-                
-              <span>
-            <p class="city" id="description">
-        
-            Mostly sunny today
-            </p>
-            </span>
-      
+            <div class="col-6">
+              <span class="temperature" id="temperature">
+                24
+              </span>
+              <span class="units">
+                °C
+              </span>
+              <br>
              
-       
-           
-        <br/>
-       
-        <span class="temperature" id="temperature">
-          24 
-          <span>
-
-        
-             </span>
-  
-
-            </p>
+                <p class="city" id="description">
+                Mostly sunny today
+                </p>
             </div>
 
-        <div class="col-sm-3">
-            <p>
-            <i class="fas fa-tint" id="humid"></i>
-            humidity 
-            <br/>
-            <i class="fas fa-wind" id="wind"></i>
-            wind 
-            <br/>
-            <i class="fas fa-cloud-rain"></i>
-            Precipitation 
-        </p>
-       </div>
+        </div>
         </div>
 
-
-        </p>
-        <br/>
-
-        <div class="row">
-            <div class="col-sm-2">
-                <div class="card" >
-                    <div class="card-body">
-                    <h5 class="card-title">Mon</h5>
-                    <br/>
-                    <i class="fas fa-sun"></i>
-                    <br/>
-                    <p class="card-text">26°</p>
-                    </div>
-                </div>
-                </div>
-
-
-             <div class="col-sm-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Teu</h5>
-                  <br/>
-                  <i class="fas fa-cloud-sun"></i>
-                  <br/>
-                  <p class="card-text">25°</p>
-                  </div>
-                </div>
-             </div>
-
-            <div class="col-sm-2">
-              <div class="card" >
-                <div class="card-body">
-                  <h5 class="card-title">Wed</h5>
-                  <br/>
-                  <i class="fas fa-sun"></i>
-                  <br/>
-                  <p class="card-text">28° </p>
-                  </div>
-                </div>
+        <div class="weatherDeascription">
+          <div class="row">
+          <div class="col">
+            <div class="icon-description"></div>
+              <div class="humid-icon">
+            <i class="fas fa-tint" id="humid"></i>
             </div>
+            <div class="value">
+              <span> 70%</span>
+            </div>
+            <div class="expression">
+        
+          humidity
+          </div> 
+          </div>
+          
+
+          <div class="col">
+            <div class="icon-description"></div>
+              <div class="wind-icon">
+                <i class="fas fa-wind" id="wind"></i>
+            </div>
+            <div class="value">
+              <span> 15kmph</span>
+            </div>
+            <div class="expression">
+        
+          Wind
+          </div> 
+          </div>
 
 
-                  <div class="col-sm-2">
-              <div class="card" >
-                <div class="card-body">
-                  <h5 class="card-title">Thu</h5>
-                  <br/>
-                  <i class="fas fa-cloud-sun-rain"></i>
-                  <br/>
-                  <p class="card-text">22°</p>
+
+          <div class="col">
+            <div class="icon-description"> </div>
+              <div class="precip-icon">
+                <i class="fas fa-cloud-rain" id="Precipitation"></i>
+            </div>
+            <div class="value">
+              <span> 50%</span>
+            </div>
+            <div class="expression">
+        
+          Precipitation
+          </div> 
+          </div>
+          </div>
+          </div>
+
+          <div class="weatherForcast row">
+            <div class="col">
+              <div class="weatherForcastPreview">
+                <div class="forcastDay">  Mon </div>
+                <span class="mon-icon"> <i class="fas fa-sun"></i> </span>
+                <div class="forecast-temperature">
+                  <span class="max-temperature"> 28°</span>
+                  <span class="min-temperature">21°</span>
                 </div>
-              </div>
-              </div>
-              
-
-             <div class="col-sm-2">
-              <div class="card" >
-                <div class="card-body">
-                  <h5 class="card-title">Fri</h5>
-                  <br/>
-                  <i class="fas fa-cloud-sun-rain"></i>
-                  <br/>
-                  <p class="card-text">23°</p>
-                </div>
-              </div>
-              </div>
+                
               </div>
             </div>
 
-            <br/>
-            <p class= "owner">
+            <div class="col">
+              <div class="weatherForcastPreview">
+                <div class="forcastDay">  Teu </div>
+                <span class="mon-icon"> <i class="fas fa-cloud-sun"></i> </span>
+                <div class="forecast-temperature">
+                  <span class="max-temperature"> 25°</span>
+                  <span class="min-temperature">20°</span>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="weatherForcastPreview">
+                <div class="forcastDay">  Wed </div>
+                <span class="mon-icon">  <i class="fas fa-sun"></i></span>
+                <div class="forecast-temperature">
+                  <span class="max-temperature"> 27°</span>
+                  <span class="min-temperature">20°</span>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="weatherForcastPreview">
+                <div class="forcastDay">  Thur </div>
+                <span class="mon-icon"> <i class="fas fa-cloud-sun-rain"></i> </span>
+                <div class="forecast-temperature">
+                  <span class="max-temperature"> 20°</span>
+                  <span class="min-temperature">15°</span>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="weatherForcastPreview">
+                <div class="forcastDay">  Fri </div>
+                <span class="mon-icon"> <i class="fas fa-cloud-sun-rain"></i> </span>
+                <div class="forecast-temperature">
+                  <span class="max-temperature"> 19°</span>
+                  <span class="min-temperature">12°</span>
+                </div>
+                
+              </div>
+            </div>
+
+
+          </div>
+
+  
+        </div>
+
+      </div>
+ 
+     
+
+    <footer class= "owner">
                 <a href="https://github.com/BarbMoraa/my-current-shecodes-project"> Open Source Code on Gitbub</a> by Barb
       
-
-</p>
-  
-
-
-    </div>
-    
+            </footer>
+   
    <script src="javascript.js"></script> 
 </body>
 </html>

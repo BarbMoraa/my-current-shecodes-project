@@ -1,18 +1,60 @@
 .container{
-    border: 1px solid #343a40;
     margin-top: 60px;
     max-width: 800px;
     height: 800px;
     font-family: 'Courier New', Courier, monospace;
 
-    background-color: #e0ffff;
+    background: #e0ffff;
     
 
 }
 
-input{
-    background-color: #f8f9fa;
+.image{
+    width: 50px;
 }
+ form{
+margin-top: 40px;
+padding-bottom: 30px; 
+
+}
+.type-city{
+    background: #f9f7fe;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 6px;
+    color: rgba(39,33,66,.4);
+    font-size: 16px;
+    height: 50px;
+    line-height: 20px;
+
+
+}
+.weather-info{
+    margin-top: 20px;
+    display: block;
+
+}
+.search-button{
+    background: #885df1;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    height: 50px;
+}
+
+
+
+.temperature{
+    padding-top: 0px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 60px;
+}
+
+
     .second-id{
         text-align: right;
         margin-right: 0;
@@ -35,6 +77,8 @@ input{
  .city{
      text-align: center;
      font-size: 16px;
+     margin: 0 auto;
+     padding: 0px;
 
  }
  .first{
@@ -70,4 +114,15 @@ border:30px;
     text-align: center;
     font-size: 30px;
     padding-top: -30px;
+}
+.container-fluid{
+    display: inline-block;
+    border: 1px solid gray;
+}
+.unit{
+    position: relative;
+    line-height: 1;
+    top: -34px;
+    font-size: 24px;
+    font-weight: 400;
 }

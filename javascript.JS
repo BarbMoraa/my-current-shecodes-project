@@ -1,5 +1,5 @@
 let now= new Date();
-let h4= document.querySelector("h4");
+let h4= document.querySelector("#date-today");
 let date= now.getDate();
 let hours = now.getHours();
 if( hours< 10){
@@ -21,7 +21,7 @@ function displayWeatherCondition(response) {
 
 
   document.querySelector("#city").innerHTML=response.data.name;
-  document.querySelector("#temperature").innerHTML= Math.round(response.data.main.temp);
+  document.querySelector("#temperature").innerHTML= Math.round(response.data.main.temp) ;
   document.querySelector("#humid").innerHTML=response.data.main.humidity;
   document.querySelector("#wind").innerHTML= Math.round(response.data.wind.speed);
   document.querySelector("#description").innerHTML= response.data.weather[0].main;
