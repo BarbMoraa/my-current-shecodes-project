@@ -10,7 +10,7 @@ if( minutes<10 ) {
    minutes = `0${minutes}`
 }
 
-let days= ["Sun" ,"Mon", "Teu" ,"Wed" ,"Thur", "Fri", "Sat"];
+let days= ["Sunday" ,"Monday", "Teusday" ,"Wednesday" ,"Thursday", "Friday", "Saturday"];
 let day =days[now.getDay()];
 
 h4.innerHTML = `${day} ${hours}:${minutes}` 
@@ -25,7 +25,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#humid").innerHTML=response.data.main.humidity;
   document.querySelector("#wind").innerHTML= Math.round(response.data.wind.speed);
   document.querySelector("#description").innerHTML= response.data.weather[0].main;
-  console.log(response.data);
+
 }
 
 function search(city){
