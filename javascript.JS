@@ -26,7 +26,10 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind").innerHTML= Math.round(response.data.wind.speed);
   document.querySelector("#description").innerHTML= response.data.weather[0].main;
 
+
 }
+
+
 
 function search(city){
 
@@ -34,6 +37,7 @@ function search(city){
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   
   axios.get(apiUrl).then(displayWeatherCondition);
+
 
 
 }

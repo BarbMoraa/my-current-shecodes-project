@@ -81,9 +81,9 @@ form{
 }
 .units{
     position: relative;
-    left:455px;
-    line-height: 1;
-    top: -14px;
+    left:500px;
+    line-height:1;
+    top: -38px;
 }
 
 
@@ -137,25 +137,32 @@ form{
     margin-bottom: 20px;
 }
 .dateToday{
-    text-align: center;
+   
     margin: 0 auto;
     padding-top: 10px;
 }
 
 
 .temperature{
+    position: relative;
+    right: 1px;
     text-align: center;
     font-size: 30px;
     padding-top: -30px;
+   
 }
-.container-fluid{
-    display: inline-block;
+.container{
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+
     border: 1px solid gray;
 }
-.unit{
-    position: relative;
-    line-height: 1;
-    top: -34px;
-    font-size: 24px;
-    font-weight: 400;
+.units{
+    position:absolute;
+    right: 30px;
+    top: -8px;
+    font-size: 20px;
+    font-weight: 200;
 }
