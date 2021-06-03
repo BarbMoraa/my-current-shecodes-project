@@ -16,7 +16,6 @@ let day =days[now.getDay()];
 h4.innerHTML = `${day} ${hours}:${minutes}` 
 
 
-
 function displayWeatherCondition(response) {
 
   document.querySelector("#city").innerHTML=response.data.name;
@@ -28,15 +27,12 @@ function displayWeatherCondition(response) {
 celsiusTemperature= response.data.main.temp;
  
   let iconElement= document.querySelector("#cool-icon");
-  iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}/01d@2x.png`);
+  iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}01d@2x.png`);
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
   
 
 }
-
-
-
 
 function search(city){
 
@@ -98,8 +94,6 @@ let temperatureElement=document.querySelector("#temperature");
 temperatureElement.innerHTML= Math.round (celsiusTemperature);
 
 }
-
-
 
 
 let celsiusTemperature = null;
