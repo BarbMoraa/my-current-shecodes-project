@@ -24,10 +24,21 @@ function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML= Math.round(response.data.main.temp) ;
   document.querySelector("#humid").innerHTML=response.data.main.humidity;
   document.querySelector("#wind").innerHTML= Math.round(response.data.wind.speed);
-  document.querySelector("#description").innerHTML= response.data.weather[0].main;
+  document.querySelector("#description").innerHTML= response.data.weather[0].description;
+ 
+  let iconElement= document.querySelector("#cool-icon");
+  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}/01d@2x.png`);
+
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+  
+
+
+
+
 
 
 }
+
 
 
 
@@ -77,3 +88,16 @@ navigator.geolocation.getCurrentPosition(searchLocation);
 let currrentLocationButton= document.querySelector("#current-location-button");
 currrentLocationButton.addEventListener("click", getCurrentLocation);
 
+
+function showFahreinheitTemperature(event){
+event.preventDefault();
+
+let FahreinheitTemperature= (14 * 9) / 5 + 32;
+alert(FahreinheitTemperature);
+
+
+}
+
+
+let fahreinheitLink= document.querySelector("#fah-link");
+fahreinheitLink.addEventListener("click", showFahreinheitTemperature);

@@ -7,6 +7,14 @@ form{
     padding-bottom: 30px; 
     
     }
+    
+    .float{
+        position: relative;
+        float:right;
+        right: 250px;
+        top: -64px;
+    }
+    
 .title{
     text-align: center;
 }
@@ -18,9 +26,11 @@ form{
     font-family: 'Courier New', Courier, monospace;
     background: #e0ffff;
     border: 5px;
+    border: 1px solid gray;
+}
     
 
-}
+
 .float-left{
     width: 50px;
 }
@@ -55,13 +65,6 @@ form{
     height: 50px;
 }
 
-.col-6{
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    display: block;
-}
 .secondColumn{
     margin-top: 0;
     top: -100px;
@@ -117,8 +120,6 @@ form{
  .city{
      text-align: center;
      font-size: 16px;
-     margin: 0 auto;
-     padding: 0px;
      text-transform: capitalize;
 
  }
@@ -133,9 +134,7 @@ form{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
-.search-form{
-    margin-bottom: 20px;
-}
+
 .dateToday{
    
     margin: 0 auto;
@@ -145,24 +144,19 @@ form{
 
 .temperature{
     position: relative;
-    right: 1px;
-    text-align: center;
     font-size: 30px;
-    padding-top: -30px;
+    margin-right: 0;
+    
    
 }
-.container{
-    
-    display: block;
-    margin: 0 auto;
-    margin-top: 35px;
 
-    border: 1px solid gray;
-}
 .units{
-    position:absolute;
-    right: 30px;
-    top: -8px;
+    position:relative;
+    right: 20px;
+    padding-left: 0px;
+    margin-left: 5px;
+    top: -19px;
     font-size: 20px;
     font-weight: 200;
+    color: red;
 }
