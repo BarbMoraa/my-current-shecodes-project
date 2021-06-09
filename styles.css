@@ -1,5 +1,6 @@
 body{
     font-family: monospace;
+    background: #FBF9FF;
     
     
 }
@@ -21,7 +22,7 @@ form{
     max-width: 800px;
     height: 800px;
     font-family: 'Courier New', Courier, monospace;
-    background: radial-gradient(circle at 10% 20%, rgba(234, 249, 249, 0.67) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+    background: #ffFF;
     
     border: 1px solid gray;
 }
@@ -93,6 +94,7 @@ form{
     padding-left: 30px;
     padding-right: 10px;
    max-width: 400px;
+   
 }
 .temperature-units{
   position: relative;
@@ -138,6 +140,7 @@ form{
     position: relative;
     font-size: 30px;
     margin-right: 0;
+    font-size: 64px;
     
    
 }
@@ -166,4 +169,8 @@ form{
 
 .forecast-temperature{
     font-size: 13px;
+}
+
+.weather-forecast{
+    margin-top: 80px;
 }
