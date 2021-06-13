@@ -1,6 +1,6 @@
 body{
     font-family: monospace;
-    background: #FBF9FF;
+    background: #fff;
     
     
 }
@@ -22,7 +22,7 @@ form{
     max-width: 800px;
     height: 800px;
     font-family: 'Courier New', Courier, monospace;
-    background: #ffFF;
+    background: #FFFFFf;
     
     border: 1px solid gray;
 }
@@ -75,31 +75,32 @@ form{
     text-align: center;
     margin-right: 0px;
     
+    
 }
 
 
 .weatherDescription{
     position: relative;
     right: 5px;
-    left: 150px;
+    left: 190px;
     display: block;
     margin: 0 auto;
     margin-top: 60px;
     border: 1px solid gray;
     border-radius: 20px;
     border-width: 1px;
-    box-sizing: content-box;
-    margin-left: 0px;
-    margin-right: 20px;
-    padding-left: 30px;
-    padding-right: 10px;
-   max-width: 400px;
-   
+   max-width: 350px;
+   margin-left: 10px;
+   margin-right: 10px;
+   padding-left: 30px;
+   padding-right: 0px;
 }
 .temperature-units{
   position: relative;
   left: 400px;
   padding-top: 35px;
+  font-weight: 24px;
+
 }
 
 .icon-description{
@@ -150,10 +151,9 @@ form{
     right: 20px;
     padding-left: 0px;
     margin-left: 5px;
-    top: -19px;
-    font-size: 20px;
+    top: -34px;
+    font-size: 22px;
     font-weight: 200;
-    color: red;
 }
 
 .units .active{
@@ -174,3 +174,10 @@ form{
 .weather-forecast{
     margin-top: 80px;
 }
+.humid-icon{
+    color: #fd7e14;
+}
+.wind-icon{
+    color: #fd7e14;
+}
+
